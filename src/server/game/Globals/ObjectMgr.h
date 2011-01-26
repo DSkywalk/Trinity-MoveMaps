@@ -608,6 +608,8 @@ class ObjectMgr
         Group * GetGroupByGUID(uint32 guid) const;
         void AddGroup(Group* group) { mGroupSet.insert(group); }
         void RemoveGroup(Group* group) { mGroupSet.erase(group); }
+        GroupSet::iterator GetGroupSetBegin() { return mGroupSet.begin(); }
+        GroupSet::iterator GetGroupSetEnd()   { return mGroupSet.end(); }
 
         Guild* GetGuildByLeader(uint64 const&guid) const;
         Guild* GetGuildById(uint32 guildId) const;

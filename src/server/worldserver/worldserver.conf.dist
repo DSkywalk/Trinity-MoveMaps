@@ -1101,6 +1101,12 @@ RecruitAFriend.MaxDifference = 3
 InstantLogout = 1
 
 #
+#    GroupLeaderReconnectPeriod
+#        The time the leader of a group has to reconnect before the lead goes to another player (also applies for a server crash)
+#        Default: 120 (seconds)
+
+GroupLeaderReconnectPeriod = 120
+
 #    DisableWaterBreath
 #        Description: Required security level for water breathing.
 #        Default:     4  - (Disabled)

@@ -811,6 +811,7 @@ void WorldSession::HandlePlayerLogin(LoginQueryHolder * holder)
     if (Group *group = pCurrChar->GetGroup())
     {
         //pCurrChar->groupInfo.group->SendInit(this); // useless
+        group->CheckLeader(pCurrChar->GetGUID(), false); //check leader login
         group->SendUpdate();
         group->ResetMaxEnchantingLevel();
     }
